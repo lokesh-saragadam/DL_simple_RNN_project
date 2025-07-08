@@ -32,7 +32,6 @@ This project applies **Natural Language Processing (NLP)** techniques and **Recu
 | Language         | Python            |
 | Deep Learning    | Keras, TensorFlow |
 | Web Deployment   | Streamlit         |
-| Visualization    | Matplotlib, Streamlit UI |
 | Dataset          | Keras IMDB (50,000 labeled reviews) |
 
 ---

@@ -32,8 +32,8 @@ def pred_sentiment(review):
 
 import streamlit as st
 
-st.title('IMDB Movie Review Sentiment Analysis')
-st.write('Enter a movie Review to classify it as Positive or Negative')
+st.title('🎬 IMDB Movie Review Sentiment Analysis')
+st.write('Enter a movie review and let the model classify it as **Positive** or **Negative**.')
 
 ##Taking in input
 

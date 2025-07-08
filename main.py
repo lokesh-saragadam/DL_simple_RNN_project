@@ -31,6 +31,9 @@ def pred_sentiment(review):
     return sent , pred[0][0]  #remember this model had {0.9} accuracy
 
 import streamlit as st
+# Streamlit App UI
+st.set_page_config(page_title="IMDB Sentiment Classifier", page_icon="🎬", layout="centered")
+
 
 st.title('🎬 IMDB Movie Review Sentiment Analysis')
 st.write('Enter a movie review and let the model classify it as **Positive** or **Negative**.')

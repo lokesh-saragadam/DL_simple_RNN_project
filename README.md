@@ -69,5 +69,5 @@ Embedding (input_dim=10000, output_dim=32, input_length=500)
 # If you have feedback or suggestions, feel free to connect:
 
 - 🔗 LinkedIn – Lokesh Saragadam
-- 📧 lokeshsaragadam@gmail.com
+- 📧 lokeshs2k6@gmail.com
 

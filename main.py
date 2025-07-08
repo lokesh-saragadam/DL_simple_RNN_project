@@ -38,14 +38,21 @@ st.write('Enter a movie review and let the model classify it as **Positive** or 
 ##Taking in input
 user_input = st.text_area('📝 Write your movie review here:')
 
-if st.button('Classify'):
-    processed_inp = preprocess_txt(user_input)
+if st.button('🔍 Classify Sentiment'):
+    if not user_input.strip():
+        st.warning("⚠️ Please enter a review before classifying.")
+    else:
+        try:
+            processed_inp = preprocess_txt(user_input)
 
-    #Prediction
-    prediction = model.predict(processed_inp)
-    sentiment = 'Positive' if prediction[0][0] >= 0.5 else 'Negative'
-
-    st.write(f"Sentiment : {sentiment}")
-    st.write(f"Prediction score: {prediction[0][0]}")
+            #Prediction
+            prediction = model.predict(processed_inp)
+            sentiment = 'Positive' if prediction[0][0] >= 0.5 else 'Negative'
+        
+            st.success(f"Sentiment : {sentiment}")
+            st.info(f"Prediction score: {prediction[0][0]}")
+        except Exception as e:
+            st.error("🚫 Prediction failed due to unexpected error.")
+            st.exception(e)  # optional: show full error
 else :
     st.write('Please enter a movie review')    

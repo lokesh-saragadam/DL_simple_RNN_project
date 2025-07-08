@@ -32,25 +32,21 @@ def pred_sentiment(review):
 
 import streamlit as st
 
+st.title('IMDB Movie Review Sentiment Analysis')
+st.write('Enter a movie Review to classify it as Positive or Negative')
 
-# Streamlit App UI
-st.set_page_config(page_title="IMDB Sentiment Classifier", page_icon="🎬", layout="centered")
+##Taking in input
 
-st.title('🎬 IMDB Movie Review Sentiment Analysis')
-st.write('Enter a movie review and let the model classify it as **Positive** or **Negative**.')
+user_input = st.text_area('Movie Review')
 
-# Input box
-user_input = st.text_area('📝 Write your movie review here:', height=150)
+if st.button('Classify'):
+    processed_inp = preprocess_txt(user_input)
 
-if st.button('🔍 Classify Sentiment'):
-    if user_input.strip():
-        sentiment, score = pred_sentiment(user_input)
-        st.success(f"**Sentiment:** {sentiment}")
-        st.info(f"**Prediction Confidence:** {score:.4f}")
-    else:
-        st.warning("⚠️ Please enter a review before clicking the button.")
-else:
-    st.caption("Waiting for your input...")
+    #Prediction
+    prediction = model.predict(processed_inp)
+    sentiment = 'Positive' if prediction[0][0] >= 0.5 else 'Negative'
 
-st.markdown("</div>", unsafe_allow_html=True)
-
+    st.write(f"Sentiment : {sentiment}")
+    st.write(f"Prediction score: {prediction[0][0]}")
+else :
+    st.write('Please enter a movie review')    

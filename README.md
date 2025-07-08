@@ -42,31 +42,32 @@ Embedding (input_dim=10000, output_dim=32, input_length=500)
 → SimpleRNN (units=32)
 → Dense (1, activation='sigmoid')
 ```
-🤔 What I Learned
-Implementing RNNs for sequential data like text
 
-Using Embedding layers to represent word vectors
+---
+## 🤔 What I Learned
+-Implementing RNNs for sequential data like text
 
-Preventing overfitting with EarlyStopping
+-Using Embedding layers to represent word vectors
 
-Deploying machine learning models with Streamlit
+-Preventing overfitting with EarlyStopping
 
-Improving user interactivity and visualization for ML apps
+-Deploying machine learning models with Streamlit
 
-The importance of balancing model complexity vs. performance
+-Improving user interactivity and visualization for ML apps
 
-📌 Future Improvements
-Use LSTM or GRU for improved long-term dependencies
+-The importance of balancing model complexity vs. performance
 
-Incorporate Word2Vec/GloVe embeddings
+## 📌 Future Improvements
+- Use LSTM or GRU for improved long-term dependencies
 
-Add confusion matrix and precision/recall metrics
+- Incorporate Word2Vec/GloVe embeddings
 
-Enable user input prediction with live feedback
+- Add confusion matrix and precision/recall metrics
 
-📬 Contact
-If you have feedback or suggestions, feel free to connect:
 
-🔗 LinkedIn – Lokesh Saragadam
-📧 lokeshsaragadam@gmail.com
+## 📬 Contact
+# If you have feedback or suggestions, feel free to connect:
+
+- 🔗 LinkedIn – Lokesh Saragadam
+- 📧 lokeshsaragadam@gmail.com
 

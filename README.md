@@ -45,17 +45,17 @@ Embedding (input_dim=10000, output_dim=32, input_length=500)
 
 ---
 ## 🤔 What I Learned
--Implementing RNNs for sequential data like text
+- Implementing RNNs for sequential data like text
 
--Using Embedding layers to represent word vectors
+- Using Embedding layers to represent word vectors
 
--Preventing overfitting with EarlyStopping
+- Preventing overfitting with EarlyStopping
 
--Deploying machine learning models with Streamlit
+- Deploying machine learning models with Streamlit
 
--Improving user interactivity and visualization for ML apps
+- Improving user interactivity and visualization for ML apps
 
--The importance of balancing model complexity vs. performance
+- The importance of balancing model complexity vs. performance
 
 ## 📌 Future Improvements
 - Use LSTM or GRU for improved long-term dependencies
